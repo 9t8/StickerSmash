@@ -51,7 +51,6 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      {/* <Text style={{ color: '#fff' }}>Open up App.tsx to start working on your app!</Text> */}
       <View style={styles.imageContainer}>
         <ImageViewer
           placeholderImageSource={PlaceholderImage}
