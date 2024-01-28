@@ -19,12 +19,12 @@ const PlaceholderImage = require('./assets/images/background-image.png')
 export default function App() {
   const [status, requestPermission] = MediaLibrary.usePermissions()
 
-  const imageRef = useRef(null)
-
   const [selectedImage, setSelectedImage] = useState('')
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [showAppOptions, setShowAppOptions] = useState(false);
   const [pickedEmoji, setPickedEmoji] = useState(null);
+
+  const imageRef = useRef(null)
 
   if (status === null) {
     requestPermission()
